@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const Copyright = styled.div`
-  padding: 20px;
+  padding: 22px;
 `;
 
 export const NextLogo = styled.div`

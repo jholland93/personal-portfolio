@@ -97,6 +97,7 @@ export const ProjectItem = () => (
 
                 <UtilityList>
                   <ExternalLinks href={visit}>View</ExternalLinks>
+                  <ExternalLinks href={source}>Code</ExternalLinks>
                 </UtilityList>
                 <videoModal />
               </BlogCard>

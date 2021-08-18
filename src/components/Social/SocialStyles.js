@@ -24,7 +24,6 @@ export const SocialContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: block;
     width: 100%;
     z-index: 1000;
     background-color: black;

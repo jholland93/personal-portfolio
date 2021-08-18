@@ -96,11 +96,12 @@ const Home = () => {
   return (
     <Layout>
       <Cursor />
-      <Social />
+
       <Section grid>
         <Hero />
         {/* <About /> */}
       </Section>
+      <Social />
       <Projects />
     </Layout>
   );

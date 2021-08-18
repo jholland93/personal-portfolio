@@ -62,7 +62,7 @@ export const ProjectItem = () => (
   <>
     <GridContainer>
       <Swiper
-        spaceBetween={50}
+        spaceBetween={60}
         slidesPerView={1}
         navigation
         breakpoints={{
@@ -97,9 +97,7 @@ export const ProjectItem = () => (
 
                 <UtilityList>
                   <ExternalLinks href={visit}>View</ExternalLinks>
-                  <ExternalLinks href={source}>Code</ExternalLinks>
                 </UtilityList>
-                <videoModal />
               </BlogCard>
             </SwiperSlide>
           )

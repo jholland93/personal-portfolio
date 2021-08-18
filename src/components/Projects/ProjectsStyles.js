@@ -10,11 +10,11 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
   display: flex;
-  margin: 0 4rem 8rem 4rem;
+  margin: 0 0.5rem 8rem 0.5rem;
   max-width: 100%;
 
   .swiper-container {
-    padding: 8rem 1rem;
+    padding: 8rem 0;
     max-width: 1600px;
   }
 
@@ -48,7 +48,7 @@ export const BlogCard = styled.div`
   text-align: center;
   border: 1px solid lightgrey;
   z-index: 100;
-  margin: 0;
+  margin: 1.5rem;
   min-height: 99%;
 `;
 export const TitleContent = styled.div`
@@ -68,15 +68,13 @@ export const HeaderThree = styled.h3`
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
-  margin: 20px auto;
+  margin: 0px auto;
   border: 0;
   background: #950740;
 `;
 
 export const CardInfo = styled.p`
-  width: 90%;
   text-align: justify;
-  margin: 0 auto;
   padding: 1rem;
   color: white;
   font-style: 2rem;

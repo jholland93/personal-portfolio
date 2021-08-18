@@ -36,7 +36,7 @@ export const HeroSection = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "0")};
-
+    margin: 20% 0;
     width: 100%;
   }
 `;
@@ -47,7 +47,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => (props.main ? "72px" : "56px")};
   width: max-content;
   max-width: 100%;
-  margin-bottom: 16px;
+
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -58,13 +58,11 @@ export const SectionTitle = styled.h2`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => (props.main ? "28px" : "32px")};
+    font-size: ${(props) => (props.main ? "4rem" : "52px")};
     line-height: ${(props) => (props.main ? "32px" : "40px")};
-    margin-bottom: 8px;
-    padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
-    max-width: 100%;
+    margin-bottom: 0rem;
+    padding: ${(props) => (props.main ? "16px  8px" : "0")};
   }
 `;
 
@@ -86,7 +84,8 @@ export const SectionText = styled.p`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 16px;
+
+    margin-bottom: 5rem;
   }
 `;
 
@@ -225,7 +224,6 @@ export const ButtonFront = styled.button`
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 400px;
   height: 100%;
   background: ${({ alt }) =>
     alt

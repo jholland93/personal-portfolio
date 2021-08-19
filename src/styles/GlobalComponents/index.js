@@ -27,8 +27,9 @@ export const HeroSection = styled.section`
   width: 100%;
   max-width: 1600px;
   overflow: hidden;
-  height: 100vh;
-  max-height: 800px @media ${(props) => props.theme.breakpoints.md} {
+  height: 80vh;
+  max-height: 100vh;
+  @media ${(props) => props.theme.breakpoints.md} {
     flex-direction: column;
   }
 

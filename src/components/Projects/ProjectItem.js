@@ -22,47 +22,11 @@ import SwiperCore, { Navigation } from "swiper";
 
 SwiperCore.use([Navigation]);
 
-const ProjectItemStyles = styled.div`
-  .projectItem__img {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 12px;
-    display: inline-block;
-    border: 3px solid white;
-    img {
-      height: 100%;
-    }
-  }
-
-  .projectItem__info {
-    margin-top: 1;
-    background-color: red;
-    padding: 1rem;
-    border-radius: 12px;
-  }
-
-  .projectIrem__title {
-    font-size: 2.2rem;
-  }
-
-  .prjectItem__desc {
-    font-size: 1.6rem;
-    font-family: "Roboto";
-    margin-top: 1rem;
-  }
-  @media only screen and (max-width: 768px) {
-    .projectItem__img {
-      height: 35px;
-    }
-  }
-`;
-
 export const ProjectItem = () => (
   <>
     <GridContainer>
       <Swiper
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={1}
         navigation
         breakpoints={{
@@ -96,8 +60,11 @@ export const ProjectItem = () => (
                 </TagList>
 
                 <UtilityList>
-                  <ExternalLinks href={visit}>View</ExternalLinks>
+                  <ExternalLinks href={visit} target="_blank">
+                    View
+                  </ExternalLinks>
                 </UtilityList>
+                <videoModal />
               </BlogCard>
             </SwiperSlide>
           )

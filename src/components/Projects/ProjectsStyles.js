@@ -10,7 +10,7 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
   display: flex;
-  margin: 0 0.5rem 8rem 0.5rem;
+  margin: 0 1rem 8rem 1rem;
   max-width: 100%;
 
   .swiper-container {
@@ -20,7 +20,6 @@ export const GridContainer = styled.section`
 
   .swiper-button-prev,
   .swiper-button-next {
-    cursor: none;
     position: absolute;
     height: 50px;
     width: 50px;
@@ -48,7 +47,7 @@ export const BlogCard = styled.div`
   text-align: center;
   border: 1px solid lightgrey;
   z-index: 100;
-  margin: 1.5rem;
+
   min-height: 99%;
 `;
 export const TitleContent = styled.div`
@@ -96,7 +95,9 @@ export const ExternalLinks = styled.a`
   background: hsl(342, 93%, 40%);
   border-radius: 100px;
   transition: 0.5s;
+
   &:hover {
+    transform: scale(1.04);
   }
 `;
 

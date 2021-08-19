@@ -56,7 +56,7 @@ export const projects = [
     image: "/images/squadinfo-mockup.png",
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://google.com",
-    visit: "https://google.com",
+    visit: "https://github.com/jholland93/Squad-Info-App/wiki/User-Guide",
     id: 5,
   },
 ];

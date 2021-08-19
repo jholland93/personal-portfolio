@@ -1,7 +1,7 @@
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-export default function TitleAnimation(){
-    return <Wrapper>Hi, I'm Jason</Wrapper>
+export default function TitleAnimation() {
+  return <Wrapper>Hi, I'm Jason</Wrapper>;
 }
 
 const animation = keyframes`
@@ -11,9 +11,7 @@ const animation = keyframes`
 `;
 
 const Wrapper = styled.span`
-display:inline-block; 
-    animation-name:${animation};
-    animation-duration: 1s;
-    animation-fill-mode:forwards;
-
-`
+  animation-name: ${animation};
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+`;

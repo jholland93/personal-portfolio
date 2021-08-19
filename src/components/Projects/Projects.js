@@ -5,7 +5,7 @@ import { ProjectItem } from "./ProjectItem";
 import "swiper/swiper-bundle.min.css";
 
 const Projects = () => (
-  <Section nopadding id="projects">
+  <Section id="projects">
     <SectionTitle main>Projects</SectionTitle>
     <ProjectItem />
   </Section>

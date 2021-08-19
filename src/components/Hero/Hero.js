@@ -22,7 +22,7 @@ const Hero = (props) => (
       </SectionTitle>
       <SectionText>
         First Class Honours Computing &amp; Digital Media Graduate seeking
-        opportunites in web design &amp; front end developmet
+        opportunites in Web Design &amp; Front End Development.
       </SectionText>
       <Button>Resume</Button>
     </Section>

@@ -31,6 +31,10 @@ export const GridContainer = styled.section`
     transform: translateY(50%);
     color: white;
     border-radius: 100%;
+
+    &:focus {
+      outline: 0 !important;
+    }
   }
 
   .swiper-button-next {

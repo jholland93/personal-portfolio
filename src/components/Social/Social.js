@@ -11,9 +11,9 @@ export const Social = () => (
     <SocialIcons href="https://github.com">
       <AiFillGithub size="3rem" />
     </SocialIcons>
-    <SocialIcons href="https://github.com">
+    {/* <SocialIcons href="https://github.com">
       <AiFillDribbbleCircle size="3rem" />
-    </SocialIcons>
+    </SocialIcons> */}
     <SocialIcons href="https://github.com">
       <AiFillLinkedin size="3rem" />
     </SocialIcons>

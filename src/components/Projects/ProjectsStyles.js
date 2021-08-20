@@ -47,8 +47,10 @@ export const BlogCard = styled.div`
   text-align: center;
   border: 1px solid lightgrey;
   z-index: 100;
-
   min-height: 99%;
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin: 0 3rem;
+  }
 `;
 export const TitleContent = styled.div`
   text-align: center;
@@ -74,7 +76,7 @@ export const Hr = styled.hr`
 
 export const CardInfo = styled.p`
   text-align: justify;
-  padding: 1rem;
+  padding: 2rem;
   color: white;
   font-style: 2rem;
   line-height: 24px;
@@ -95,6 +97,7 @@ export const ExternalLinks = styled.a`
   background: hsl(342, 93%, 40%);
   border-radius: 100px;
   transition: 0.5s;
+  margin-bottom: 1rem;
 
   &:hover {
     transform: scale(1.04);

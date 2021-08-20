@@ -99,7 +99,7 @@ const Home = () => {
 
       <Section grid>
         <Hero />
-        {/* <About /> */}
+        <About />
       </Section>
       <Social />
       <Projects />

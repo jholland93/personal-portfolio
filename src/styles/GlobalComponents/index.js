@@ -4,8 +4,6 @@ export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
-  margin: 0 auto;
-  position: relative;
   overflow: hidden;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -15,7 +13,6 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
-
     flex-direction: column;
   }
 `;
@@ -45,8 +42,6 @@ export const SectionTitle = styled.h2`
   font-size: ${(props) => (props.main ? "65px" : "56px")};
   line-height: ${(props) => (props.main ? "72px" : "56px")};
 
-  max-width: 100%;
-
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -66,7 +61,7 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionText = styled.p`
-  max-width: 800px;
+  max-width: 700px;
   font-size: 2rem;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
@@ -86,14 +81,14 @@ export const SectionText = styled.p`
 `;
 
 export const SectionDivider = styled.div`
-  width: 50px;
+  width: 60px;
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
   background: ${(props) =>
     props.colorAlt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
+      : "linear-gradient(270deg, #950740 0%, #c3073f 100%)"};
 
   margin: ${(props) => (props.divider ? "4rem 0" : "")};
 
@@ -296,11 +291,4 @@ export const LinkIconImg = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     height: ${({ large }) => (large ? "32px" : "16px")};
   }
-`;
-
-export const ProfileImg = styled.div`
-  position: absolute;
-  max-width: 400px;
-  right: 0;
-  border-radius: 100%;
 `;

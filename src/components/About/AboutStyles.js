@@ -13,12 +13,11 @@ export const AboutContent = styled.div`
   flex-direction: row;
   margin-top: 5rem;
 
-  @media ${(props) => props.theme.breakpoints.lg} {
+  @media ${(props) => props.theme.breakpoints.sm} {
     flex-direction: column;
-    margin: 5rem auto;
+    margin: 5rem 0;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 0 auto;
   }
 `;
 
@@ -31,7 +30,7 @@ export const AboutInfo = styled.div``;
 
 export const ProfileImg = styled.div`
   border-radius: 100%;
-  min-width: 400px;
+
   min-height: 400px;
   padding: 5px;
   margin-top: -100px;

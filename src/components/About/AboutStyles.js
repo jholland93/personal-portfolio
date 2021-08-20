@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  height: 100vh;
-
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-bottom: 20rem;
   }
 `;
 
 export const AboutContent = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     flex-direction: column;

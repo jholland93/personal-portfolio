@@ -52,10 +52,9 @@ export const SectionTitle = styled.h2`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: ${(props) => (props.main ? "36px" : "32px")};
-    margin: 0 auto;
     line-height: 40px;
     line-height: ${(props) => (props.main ? "32px" : "40px")};
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding: ${(props) => (props.main ? "16px  8px" : "0")};
   }
 `;

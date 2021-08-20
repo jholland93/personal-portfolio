@@ -16,8 +16,8 @@ import {
 } from "./AboutStyles";
 
 const About = () => (
-  <AboutContainer id="about">
-    <Section>
+  <AboutContainer>
+    <Section id="about">
       <SectionDivider />
       <SectionTitle main>About 📖</SectionTitle>
 

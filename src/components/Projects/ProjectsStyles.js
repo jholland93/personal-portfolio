@@ -31,10 +31,17 @@ export const GridContainer = styled.section`
     transform: translateY(50%);
     color: white;
     border-radius: 100%;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      right: 50%;
+    }
   }
 
   .swiper-button-next {
     right: 0;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      right: 50%;
+      margin-right: -60px;
+    }
   }
 
   .swiper-button-prev::after,
@@ -50,6 +57,9 @@ export const BlogCard = styled.div`
   min-height: 99%;
   @media ${(props) => props.theme.breakpoints.md} {
     margin: 0 3rem;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 0;
   }
 `;
 export const TitleContent = styled.div`

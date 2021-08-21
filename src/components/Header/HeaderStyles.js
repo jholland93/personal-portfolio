@@ -29,6 +29,7 @@ export const Div2 = styled.div`
   cursor: none;
   position: absolute;
   right: 0;
+  padding-right: 1rem;
   grid-area: 2 / 2 / 3 / 5;
   display: flex;
   justify-content: space-around;

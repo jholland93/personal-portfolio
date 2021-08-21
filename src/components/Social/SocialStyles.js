@@ -23,9 +23,10 @@ export const SocialContainer = styled.div`
   bottom: 50%;
   justify-content: space-around;
   align-items: center;
+  z-index: 9999;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
-    z-index: 1000;
+
     background-color: black;
     bottom: 0%;
     right: 0;

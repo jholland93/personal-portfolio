@@ -11,11 +11,13 @@ import Footer from "../components/Footer/Footer";
 import About from "../components/About/About";
 
 const Home = () => {
+  //check if device being used is mobile
   const isMobile = () => {
     const ua = navigator.userAgent;
     return /Android|Mobi/i.test(ua);
   };
 
+  //custom cursor
   const Cursor = () => {
     if (typeof navigator !== "undefined" && isMobile()) return null;
 
@@ -83,6 +85,7 @@ const Home = () => {
     });
 
     return (
+      //custom cursor
       <div
         className={cursorClasses}
         style={{
@@ -95,14 +98,13 @@ const Home = () => {
 
   return (
     <Layout>
-      <Cursor />
-
-      <Section grid>
+      <Section>
+        <Cursor />
         <Hero />
         <About />
+        <Projects />
       </Section>
       <Social />
-      <Projects />
     </Layout>
   );
 };

@@ -3,7 +3,7 @@ export const projects = [
     title: "Netflix Clone",
     description: "A Netflix clone fetching movie data from TMDB using Axios.",
     image: "/images/portfolio-image-3.png",
-    tags: ["React", "Axios", "Firebase"],
+    tags: ["ReactJS", "Axios", "Firebase"],
     visit: "https://netflix-clone-5e021.web.app",
     id: 0,
   },
@@ -21,16 +21,16 @@ export const projects = [
     description:
       "An Amazon clone site with Google login and cart functionality. ",
     image: "/images/portfolio-image-4.png",
-    tags: ["React", "Firestore", "Flexbox"],
+    tags: ["ReactJS", "Firestore", "Flexbox"],
     visit: "https://clone-e3156.firebaseapp.com/",
     id: 2,
   },
   {
     title: "Tryb",
     description:
-      "An ecommerce site selling Irish based print designs - utilising Shopify SDK for inventory.",
+      "An ecommerce site selling Irish based print designs, utilising Shopify SDK for inventory.",
     image: "/images/tryb-mockup.png",
-    tags: ["React", "Shopify SDK", "Firebase"],
+    tags: ["ReactJS", "ShopifySDK", "Firebase"],
     visit: "https://youtu.be/nwvdnKM-IpQ",
     id: 3,
   },
@@ -48,7 +48,7 @@ export const projects = [
     description:
       "An application allowing users to keep track of squad members and their relevant information.",
     image: "/images/squadinfo-mockup.png",
-    tags: ["MongoDB", "Express", "React", "Node"],
+    tags: ["MongoDB", "Express", "ReactJS", "NodeJS"],
     visit: "https://github.com/jholland93/Squad-Info-App/wiki/User-Guide",
     id: 5,
   },

@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  @media ${(props) => props.theme.breakpoints.sm} {
-  }
+  text-align: justify;
+  margin-bottom: 20rem;
 `;
 
 export const AboutContent = styled.div`
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     flex-direction: column;
-    margin: 5rem 0;
+    padding: 10px;
+    max-width: 100%;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 0;
   }
 `;
 
@@ -22,17 +25,19 @@ export const ImageContainer = styled.div`
   z-index: 100;
 `;
 
-export const AboutInfo = styled.div``;
-
 export const ProfileImg = styled.div`
   border-radius: 100%;
-
-  min-height: 400px;
+  min-width: 200px;
+  max-width: 300px;
   padding: 5px;
-  margin-top: -100px;
+  margin-top: -50px;
   margin-left: 10%;
   margin-bottom: 5rem;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 2rem;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 300px;
   }
 `;

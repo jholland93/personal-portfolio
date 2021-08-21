@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export const ProjectsContainer = styled.div``;
+
 export const Img = styled.img`
   object-fit: cover;
   width: 100%;
@@ -10,12 +12,15 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
   display: flex;
-  margin: 0 1rem 8rem 1rem;
+  margin: 2rem 1rem 10rem 1rem;
   max-width: 100%;
 
   .swiper-container {
     padding: 8rem 0;
     max-width: 1600px;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      padding-top: 1rem;
+    }
   }
 
   .swiper-button-prev,
@@ -27,12 +32,14 @@ export const GridContainer = styled.section`
     z-index: 10;
     right: 60px;
     left: auto;
-    top: 0;
-    transform: translateY(50%);
+    top: 40px;
     color: white;
     border-radius: 100%;
     @media ${(props) => props.theme.breakpoints.sm} {
       right: 50%;
+      top: 85%;
+      margin-top: 3rem;
+      z-index: 9999;
     }
   }
 
@@ -53,13 +60,10 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   text-align: center;
   border: 1px solid lightgrey;
-  z-index: 100;
   min-height: 99%;
+
   @media ${(props) => props.theme.breakpoints.md} {
-    margin: 0 3rem;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 0;
+    margin: 0 auto;
   }
 `;
 export const TitleContent = styled.div`
@@ -79,14 +83,14 @@ export const HeaderThree = styled.h3`
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
-  margin: 0px auto;
+  margin: 0 auto;
   border: 0;
   background: #950740;
 `;
 
 export const CardInfo = styled.p`
   text-align: justify;
-  padding: 2rem;
+  padding: 1rem;
   color: white;
   font-style: 2rem;
   line-height: 24px;
@@ -117,12 +121,13 @@ export const ExternalLinks = styled.a`
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  padding: 2rem 1rem;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
-  font-size: 1.5rem;
+  color: grey;
+  font-size: 12px;
   background: black;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
   border-radius: 20px;
+  margin: 0px;
 `;

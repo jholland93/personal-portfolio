@@ -4,7 +4,6 @@ export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
-  overflow: hidden;
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 8px 0;
@@ -52,6 +51,7 @@ export const SectionTitle = styled.h2`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: ${(props) => (props.main ? "36px" : "32px")};
+
     line-height: 40px;
     line-height: ${(props) => (props.main ? "32px" : "40px")};
     margin-bottom: 2rem;

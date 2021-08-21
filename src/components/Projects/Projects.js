@@ -7,13 +7,16 @@ import {
 
 import { ProjectItem } from "./ProjectItem";
 import "swiper/swiper-bundle.min.css";
+import { ProjectsContainer } from "./ProjectsStyles";
 
 const Projects = () => (
-  <Section id="projects">
-    <SectionDivider />
-    <SectionTitle main>Projects &#9997;&#65039;</SectionTitle>
+  <ProjectsContainer>
+    <Section id="projects">
+      <SectionDivider />
+      <SectionTitle main>Projects &#128187;</SectionTitle>
+    </Section>
     <ProjectItem />
-  </Section>
+  </ProjectsContainer>
 );
 
 export default Projects;

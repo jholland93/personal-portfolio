@@ -26,18 +26,16 @@ export const ProjectItem = () => (
   <>
     <GridContainer>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         slidesPerView={1}
         navigation
         breakpoints={{
           //when width >= 640px
-          640: {
-            slidesPerView: 1,
-          },
-          768: {
+
+          550: {
             slidesPerView: 2,
           },
-          1300: {
+          1200: {
             slidesPerView: 3,
           },
         }}
@@ -51,20 +49,20 @@ export const ProjectItem = () => (
                   <HeaderThree title>{title}</HeaderThree>
                   <Hr />
                 </TitleContent>
-                <CardInfo>{description}</CardInfo>
-
-                <TagList>
-                  {tags.map((tag, i) => (
-                    <Tag key={i}>{tag}</Tag>
-                  ))}
-                </TagList>
+                <CardInfo>
+                  {description}{" "}
+                  <TagList>
+                    {tags.map((tag, i) => (
+                      <Tag key={i}>{tag}</Tag>
+                    ))}
+                  </TagList>
+                </CardInfo>
 
                 <UtilityList>
                   <ExternalLinks href={visit} target="_blank">
                     View
                   </ExternalLinks>
                 </UtilityList>
-                <videoModal />
               </BlogCard>
             </SwiperSlide>
           )

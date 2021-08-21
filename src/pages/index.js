@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Acomplishments from "../components/Acomplishments/Acomplishments";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
@@ -9,6 +9,7 @@ import classNames from "classnames";
 import { Social } from "../components/Social/Social";
 import Footer from "../components/Footer/Footer";
 import About from "../components/About/About";
+import Router from "next/router";
 
 const Home = () => {
   //check if device being used is mobile
@@ -95,7 +96,7 @@ const Home = () => {
       />
     );
   };
-
+  Router.reload(window.location.pathname);
   return (
     <Layout>
       <Section>

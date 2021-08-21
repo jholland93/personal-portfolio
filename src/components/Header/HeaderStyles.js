@@ -28,7 +28,7 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   cursor: none;
   position: absolute;
-  right: 5%;
+  right: 0;
   grid-area: 2 / 2 / 3 / 5;
   display: flex;
   justify-content: space-around;
@@ -54,6 +54,6 @@ export const NavLink = styled.a`
     opacity: 1;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    // padding: 0.5rem;
+    padding: 0.5rem;
   }
 `;

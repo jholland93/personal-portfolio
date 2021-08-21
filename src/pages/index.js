@@ -96,7 +96,7 @@ const Home = () => {
       />
     );
   };
-  Router.reload(window.location.pathname);
+
   return (
     <Layout>
       <Section>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -60,7 +60,7 @@ export const ProjectItem = () => (
 
                 <UtilityList>
                   <ExternalLinks href={visit} target="_blank">
-                    View
+                    VIEW <FaExternalLinkAlt size="1.5rem" />
                   </ExternalLinks>
                 </UtilityList>
               </BlogCard>

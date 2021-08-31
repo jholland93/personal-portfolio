@@ -125,7 +125,7 @@ export const TagList = styled.ul`
 `;
 export const Tag = styled.li`
   color: grey;
-  font-size: 12px;
+  font-size: 14px;
   background: black;
   padding: 0.1rem 1rem;
   border-radius: 20px;

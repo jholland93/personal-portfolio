@@ -35,15 +35,15 @@ export const projects = [
     id: 3,
   },
 
-  {
-    title: "Ciara MUA",
-    description:
-      "A website created for a freelance makeup artist acting as point of contact for customers.  ",
-    image: "/images/portfolio-image-1.png",
-    tags: ["WordPress", "HTML", "CSS"],
-    visit: "https://www.ciaramua.com",
-    id: 2,
-  },
+  // {
+  //   title: "Ciara MUA",
+  //   description:
+  //     "A website created for a freelance makeup artist acting as point of contact for customers.  ",
+  //   image: "/images/portfolio-image-1.png",
+  //   tags: ["WordPress", "HTML", "CSS"],
+  //   visit: "https://www.ciaramua.com",
+  //   id: 2,
+  // },
   {
     title: "PL Dashboard",
     description: "A data visualisation for the 19/20 Premier League Season.",
